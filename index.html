@@ -17,33 +17,56 @@
                 <p class="quote">
                     Gömrük xidməti hər bir dövlətin
                     müstəqilliyinin əsas atributlarından biridir.
-                    <span>H. Əliyev</span>
+                    <span>Heydər Əliyev</span>
                 </p>
             </div>
         </div>
     </header>
     <main>
         <div class="container">
+            <div class="result-container">
+                <div>
+                    <div class="result-row">
+                        <h2 style="text-align: center;">Nəticə</h2>
+                    </div>
+                    <div class="result-row d-flex space-between">
+                        <span>Suallarin sayi :</span>
+                        <span class="result-field"></span>
+                    </div>
+                    <div class="result-row d-flex space-between">
+                        <span>Düzgün cavablar :</span>
+                        <span class="result-field"></span>
+                    </div>
+                    <div class="result-row d-flex space-between">
+                        <span>Səhv cavablar :</span>
+                        <span class="result-field"></span>
+                    </div>
+                    <div class="result-row d-flex space-between">
+                        <span>Cavabsiz :</span>
+                        <span class="result-field"></span>
+                    </div>
+                </div>
+            </div>
             <div class="d-flex center" style="padding-top: 50px">
                 <button id="start-exam" class="btn green-btn">İmtahana başla</button>
             </div>
             <div class="quiz-container">
                 <div class="quiz-timeline">
-                    <span>1</span>
-                    <span>2</span>
-                    <span>3</span>
-                    <span>4</span>
-                    <span>5</span>
-                    <span>6</span>
-                    <span>7</span>
-                    <span>8</span>
-                    <span>9</span>
-                    <span>10</span>
-                    <span>11</span>
-                    <span>12</span>
-                    <span>13</span>
-                    <span>14</span>
-                    <span>15</span>
+                    <div><span>1</span></div>
+                    <div><span>2</span></div>
+                    <div><span>3</span></div>
+                    <div><span>4</span></div>
+                    <div><span>5</span></div>
+                    <div><span>6</span></div>
+                    <div><span>7</span></div>
+                    <div><span>8</span></div>
+                    <div><span>9</span></div>
+                    <div><span>10</span></div>
+                    <div><span>11</span></div>
+                    <div><span>12</span></div>
+                    <div><span>13</span></div>
+                    <div><span>14</span></div>
+                    <div><span>15</span></div>
                 </div>
                 <div class="quiz-question">
                     <p></p>
@@ -67,9 +90,9 @@
                     </ul>
                 </div>
                 <div class="d-flex center align-items-center">
-                    <button class="arrow-btn left-arrow" onclick="setQuestion(currentQuestionIndex - 1)"></button>
+                    <button class="arrow-btn left-arrow" onclick="setQuestion(currentQuestionIndex - 1, currentQuestionIndex)"></button>
                     <button id="finish-exam" class="btn red-btn">İmtahanı bitirin</button>
-                    <button class="arrow-btn right-arrow" onclick="setQuestion(currentQuestionIndex + 1)"></button>
+                    <button class="arrow-btn right-arrow" onclick="setQuestion(currentQuestionIndex + 1, currentQuestionIndex)"></button>
                 </div>
             </div>
         </div>
